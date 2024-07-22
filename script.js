@@ -34,7 +34,7 @@ function calculateDose() {
     
     // Exibir o resultado e a dose alvo
     const doseAlvo = doseAlvoMap[medicationSelect];
-    displayResult(`Dose infundida: ${doseInfundida.toFixed(2)} mcg/kg/min<br>Dose Alvo: ${doseAlvo}`);
+    displayResult(`Dose infundida: ${doseInfundida.toFixed(2)} mcg/kg/min<br>Dose Habitual: ${doseAlvo}`);
 }
 
 function displayError(message) {
