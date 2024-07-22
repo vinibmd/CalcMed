@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Infusão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Infusão:</h1>
+        <form id="doseForm">
+            <label for="medicationSelect">Medicação:</label>
+            <select id="medicationSelect" required>
+                <option value="Adrenalina">Adrenalina</option>
+                <option value="Dobutamina">Dobutamina</option>
+                <option value="Dopamina">Dopamina</option>
+                <option value="Esmolol">Esmolol</option>
+                <option value="Milrinona">Milrinona</option>
+                <option value="Nitroglicerina">Nitroglicerina</option>
+                <option value="Nitroprussiato">Nitroprussiato</option>
+                <option value="Noradrenalina">Noradrenalina</option>
+            </select>
+            
+            <label for="medicationDose">Dose da Medicação (em mg):</label>
+            <input type="number" id="medicationDose" min="1" required>
+            
+            <label for="patientWeight">Peso do Paciente (em Kg):</label>
+            <input type="number" id="patientWeight" min="1" required>
+            
+            <label for="diluentVolume">Volume Total da Solução (em mL):</label>
+            <input type="number" id="diluentVolume" min="1" required>
+            
+            <label for="infusionRate">Velocidade de Infusão (em mL/h):</label>
+            <input type="number" id="infusionRate" min="1" required>
+            
+            <div class="button-container">
+                <button type="button" onclick="calculateDose()">Calcular</button>
+                <button type="reset" onclick="resetResult()">Resetar</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
