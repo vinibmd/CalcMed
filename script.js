@@ -10,7 +10,7 @@ const doseAlvoMap = {
 };
 
 function calculateDose() {
-    // Obter os valores de entrada teste de sincronização
+    // Obter os valores de entrada
     const medicationDose = parseFloat(document.getElementById('medicationDose').value);
     const patientWeight = parseFloat(document.getElementById('patientWeight').value);
     const diluentVolume = parseFloat(document.getElementById('diluentVolume').value);
